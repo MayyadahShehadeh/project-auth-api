@@ -1,0 +1,4 @@
+PORT=8000
+NODE_ENV=test
+DATABASE_URL=postgres://localhost:5432/project
+SECRET=footballteam
