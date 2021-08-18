@@ -10,7 +10,10 @@ const premissions = require('../middleware/acl');
 
 authRoutes.post('/signup',async(req,res,next)=>{
     try{
+        console.log("/signup")
+        console.log("users",users);
         let userRecord = await users.create(req.body);
+        console.log(userRecord,"userRecord")
         const output ={
             user: userRecord,
             token: userRecord.token

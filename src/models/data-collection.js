@@ -22,6 +22,7 @@ class DataCollection {
       return await this.model.create(record);
     } catch (error) {
       console.error(error);
+      console.log("this from collections create")
     }
   }
 
