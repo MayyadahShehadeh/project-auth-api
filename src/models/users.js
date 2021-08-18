@@ -34,8 +34,12 @@ const userModel = (sequelize, DataTypes) => {
 
 
     model.beforeCreate(async (user) => {
-        let hashedPass = await bcrypt.hash(user.password, 5);
+        console.log('user',user);
+        let hashedPass = await bcrypt.hash(user.password, 10);
+
         user.password = hashedPass;
+        console.log(hashedPass,'hashpass')
+        return
     });
     model.authenticateBasic = async function (username, password) {
         const user = await this.findOne({ where: { username } });
