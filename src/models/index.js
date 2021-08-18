@@ -8,7 +8,7 @@ const Collection = require('./data-collection');
 
 
 const DATABASE_URL =
-  process.env.NODE_ENV == "test" ? "sqlite:memory": process.env.DATABASE_URL;
+  process.env.NODE_ENV === "testing" ? "sqlite:memory": process.env.DATABASE_URL;
 
 
 const sequelize = new Sequelize(DATABASE_URL, {});
