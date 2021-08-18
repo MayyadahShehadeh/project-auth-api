@@ -64,3 +64,5 @@ SECRET=footballteam
 
 
 ![Capture](Capture.PNG)
+![Capture](Capture10.PNG)
+![Capture](Capture1.PNG)
